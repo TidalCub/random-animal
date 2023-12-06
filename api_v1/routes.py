@@ -10,7 +10,7 @@ def get_random_image():
     if image:
         return send_file(image, mimetype='image/jpeg')
     else:
-        jsonify({'error': 'Animal not found'}), 404
+       return jsonify({'error': 'Animal not found'}), 404
 
 def get_image(animal):
     try:
